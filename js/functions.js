@@ -21,6 +21,7 @@ function extractAndSumDigits(input) {
     }
   }
 
+
   return result === 0 ? NaN : Math.abs(result);
 }
 
