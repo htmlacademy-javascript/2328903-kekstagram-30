@@ -9,17 +9,7 @@ function isPalindrome(inputString) {
 }
 
 function extractAndSumDigits(input) {
-
   input = input.toString();
-
-  if (typeof input === 'number') {
-    return input;
-  }
-
-  if (typeof input !== 'string') {
-    return NaN;
-  }
-
 
   let result = 0;
 
@@ -31,8 +21,8 @@ function extractAndSumDigits(input) {
     }
   }
 
+
   return result === 0 ? NaN : Math.abs(result);
 }
 
-export {checkStringLength, isPalindrome, extractAndSumDigits}
-
+export {checkStringLength, isPalindrome, extractAndSumDigits};
